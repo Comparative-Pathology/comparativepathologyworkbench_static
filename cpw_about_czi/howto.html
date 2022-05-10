@@ -1,0 +1,222 @@
+<!--
+\file		 howto.html
+\author		 Mike Wicks
+\date		 March 2021
+\version		$Id$
+\par
+(C) University of Edinburgh, Edinburgh, UK
+(C) Heriot-Watt University, Edinburgh, UK
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be
+useful but WITHOUT ANY WARRANTY; without even the implied
+warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+PURPOSE.	See the GNU General Public License for more
+details.
+
+You should have received a copy of the GNU General Public
+License along with this program; if not, write to the Free
+Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+Boston, MA	02110-1301, USA.
+\brief
+The About howto
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="static/apple-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="60x60" href="static/apple-icon-60x60.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="static/apple-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="static/apple-icon-76x76.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="static/apple-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="static/apple-icon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="static/apple-icon-144x144.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="static/apple-icon-152x152.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="static/apple-icon-180x180.png" >
+	<link rel="icon" type="image/png" sizes="192x192" href="static/android-icon-192x192.png" />
+	<link rel="shortcut icon" type="image/ico" href="static/favicon.ico" />
+	<link rel="icon" type="image/png" sizes="32x32" href="static/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="96x96" href="static/favicon-96x96.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="static/favicon-16x16.png" />
+	<link rel="manifest" href="static/manifest.json" />
+	<meta name="msapplication-TileColor" content="#ffffff" />
+	<meta name="msapplication-TileImage" content="/static/ms-icon-144x144.png" />
+	<meta name="theme-color" content="#ffffff" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.css" />
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js"></script>
+
+	<!-- CZI -->
+	<link rel="stylesheet" href="static/styles_czi.css" />
+
+	<title>Comparative Pathology Workbench</title>
+
+</head>
+
+<body>
+
+<div class="page-container">
+
+	<div class="page-header">
+
+		<div class="grid-container-header">
+
+			<div class="grid-item-header-logo">
+				<a href="https://www.ed.ac.uk/comparative-pathology">
+					<img style="width: 125px;" alt="CCP" title="Centre for Comparative Pathology" src="static/ccp-logo.png" >
+				</a>
+			</div><!-- End of grid-item-header-logo -->
+
+			<div class="grid-item-header-title">
+				<a href="https://workbench-czi-cpw.mvm.ed.ac.uk/home/"><strong>Comparative Pathology Workbench</strong></a>
+			</div><!-- End of grid-item-header-title -->
+
+ 	 		<div class="grid-item-header-search">
+			</div><!-- End of grid-item-header-search -->
+
+			<div class="grid-item-header-user">
+			</div><!-- End of grid-item-header-user -->
+
+			<div class="grid-item-header-bench">
+				<div class="header-dropdown">
+					<button class="header-drop-button">About <i class="fa fa-caret-down"></i></button>
+					<div class="header-dropdown-content">
+						<a href="https://www.ed.ac.uk/comparative-pathology/the-gut-cell-atlas-project/gut-cell-atlas-project"><button class="button button-info"><i class="fa fa-info-circle"></i></button> About</a>
+						<a href="https://www.ed.ac.uk/comparative-pathology/the-gut-cell-atlas-project/gut-cell-atlas-project-team"><button class="button button-info"><i class="fa fa-users"></i></button> Contributors</a>
+						<a href="howto.html"><button class="button button-info"><i class="fa fa-question-circle"></i></button> How To</a>
+						<a href="documentation.html"><button class="button button-info"><i class="fa fa-file"></i></button> Documentation</a>
+					</div><!-- End of header-dropdown-content -->
+				</div><!-- End of header-dropdown -->
+			</div><!-- End of grid-item-header-bench -->
+
+			<div class="grid-item-header-collection">
+			</div><!-- End of grid-item-header-collection -->
+
+			<div class="grid-item-header-image">
+			</div><!-- End of grid-item-header-image -->
+
+			<div class="grid-item-header-source">
+			</div><!-- End of grid-item-header-source -->
+
+			<div class="grid-item-header-about">
+			</div><!-- End of grid-item-header-about -->
+
+			<!-- Breadcrumb Menu -->
+			<div class="grid-item-header-breadcrumb">
+				<ul class="breadcrumb">
+					<li><a href="https://workbench-czi-cpw.mvm.ed.ac.uk/home/"><button class="button button-add" style="text-align: center; text-decoration: none; border: 1px solid; border-color: #E3F2FD; border-radius: 5px; color: Black; background-color: #E3F2FD; font-size: 1em;"><i class="fa fa-home-alt"></i></button></a></li>
+					<li>How To</li>
+				</ul>
+			</div><!-- End of grid-item-header-breadcrumb -->
+
+		</div><!-- End of grid-container-header -->
+
+	</div><!-- End of page-header -->
+
+	<!-- Page Body -->
+	<div class="page-body">
+
+		<!-- Page Side Bar -->
+		<div class="page-sidebar">
+		</div><!-- End of page-sidebar -->
+
+		<!-- Page Content -->
+		<div class="page-content">
+
+			<h1>How To</h1>
+
+			<p>How to use the Comparative Pathology Workbench</p>
+
+			<hr>
+
+			<br />
+
+			<h3>How to ...</h3>
+
+			<h5>How to use the Comparative Pathology Workbench</h5>
+
+			<p class="about"><a href="static/profile/HowToCPW_2022-03-23.pdf"><button class="button button-delete"><i class="fa fa-download"></i></button></a> Click <a href="static/profile/HowToCPW_2022-03-23.pdf">HERE</a> to download instructions for using the Comparative Pathology Workbench.</p>
+			
+			<h5>How to use the Comparative Pathology OMERO Server</h5>
+
+			<p class="about"><a href="static/profile/HowToOMERO-CPW_2019-04-20.pdf"><button class="button button-add"><i class="fa fa-download"></i></button></a> Click <a href="static/profile/HowToOMERO-CPW_2019-04-20.pdf">HERE</a> to download instructions for using the Comparative Pathology OMERO Server.</p>
+			
+			<br />
+
+			<h3>Registration</h3>
+
+			<h5>How to register with the Comparative Pathology Workbench</h5>
+
+			<p class="about"><a href="https://workbench-czi-cpw.mvm.ed.ac.uk/signup/"><button class="button button-delete"><i class="fa fa-user-plus"></i></button></a> From the User Menu on the Right-Hand Side of the Main Menu, click on the Registration Menu Option; Your registration is confirmed by email.</p>
+			
+			<h5>How to register with the Comparative Pathology WordPress Server</h5>
+
+			<p class="about"><a href="https://workbench-czi-cpw.mvm.ed.ac.uk/wordpress/wp-login.php?action=register"><button class="button button-add"><i class="fa fa-user-plus"></i></button></a> You will also need to register on the Comparative Pathology WordPress site to ensure you can use the full functionality of the Workbench.</p>
+			
+			<br />
+
+			<h3>Authorisation</h3>
+
+			<p class="about"><a href="https://www.ed.ac.uk/pathology/people/staff-students/mike-wicks"><button class="button button-add"><i class="fa fa-envelope"></i></button></a> Once registered with the Comparative Pathology Workbench and WordPress servers, your accounts need to be confirmed by the Comparative Pathology Workbench <a href="https://www.ed.ac.uk/pathology/people/staff-students/mike-wicks">Administrators</a>.</p>
+
+			<br />
+
+			<p class="about">Mike Wicks, 22nd March 2022</p>
+
+		</div><!-- End of page-content -->
+
+	</div><!-- End of page-body -->
+
+	<div class="page-footer">
+
+		<div class="grid-container-footer">
+
+			<div class="grid-item-footer">
+			</div><!-- End of grid-item-footer -->
+	
+			<div class="grid-item-footer">
+				<a href="https://helmsleytrust.org/"><img src="https://workbench-czi-cpw.mvm.ed.ac.uk/static/helmsley.png" style="background-color: #FFFFFF;" width="170" /></a>
+			</div><!-- End of grid-item-footer -->
+	
+			<div class="grid-item-footer">
+				<a href="https://www.humancellatlas.org/"><img src="https://workbench-czi-cpw.mvm.ed.ac.uk/static/HCA-logo-1500x500.jpeg" style="background-color: #FFFFFF;" width="170" /></a>
+			</div><!-- End of grid-item-footer -->
+	
+			<div class="grid-item-footer">
+				<a href="https://www.ed.ac.uk/pathology"><img src="https://www.ed.ac.uk/sites/all/themes/uoe/assets/logo.png" style="background-color: #FFFFFF;" width="220" /></a>
+			</div><!-- End of grid-item-footer -->
+
+			<div class="grid-item-footer">
+				<a href="https://www.hw.ac.uk/"><img src="https://workbench-czi-cpw.mvm.ed.ac.uk/static/HW-Logo.jpg" style="background-color: #FFFFFF;" width="125" /></a>
+			</div><!-- End of grid-item-footer -->
+	
+			<div class="grid-item-footer">
+				<a href="https://www.chanzuckerberg.com/"><img src="https://chanzuckerberg.com/wp-content/themes/czi/img/logo.svg" style="background-color: #FFFFFF;" width="125" /></a>
+			</div><!-- End of grid-item-footer -->
+
+			<div class="grid-item-footer">
+			</div><!-- End of grid-item-footer -->
+
+		</div><!-- End of grid-container-footer -->
+
+	</div><!-- End of page-footer -->
+
+</div><!-- End of page-container -->
+
+
+</body>
+
+</html>

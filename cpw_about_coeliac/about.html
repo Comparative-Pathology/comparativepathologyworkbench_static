@@ -1,0 +1,253 @@
+<!--
+\file		 about.html
+\author		 Mike Wicks
+\date		 March 2021
+\version		$Id$
+\par
+(C) University of Edinburgh, Edinburgh, UK
+(C) Heriot-Watt University, Edinburgh, UK
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be
+useful but WITHOUT ANY WARRANTY; without even the implied
+warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+PURPOSE.	See the GNU General Public License for more
+details.
+
+You should have received a copy of the GNU General Public
+License along with this program; if not, write to the Free
+Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+Boston, MA	02110-1301, USA.
+\brief
+The About About page
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="static/apple-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="60x60" href="static/apple-icon-60x60.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="static/apple-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="static/apple-icon-76x76.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="static/apple-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="static/apple-icon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="static/apple-icon-144x144.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="static/apple-icon-152x152.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="static/apple-icon-180x180.png" >
+	<link rel="icon" type="image/png" sizes="192x192" href="static/android-icon-192x192.png" />
+	<link rel="shortcut icon" type="image/ico" href="static/favicon.ico" />
+	<link rel="icon" type="image/png" sizes="32x32" href="static/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="96x96" href="static/favicon-96x96.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="static/favicon-16x16.png" />
+	<link rel="manifest" href="static/manifest.json" />
+	<meta name="msapplication-TileColor" content="#ffffff" />
+	<meta name="msapplication-TileImage" content="/static/ms-icon-144x144.png" />
+	<meta name="theme-color" content="#ffffff" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.css" />
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js"></script>
+
+	<!-- COELIAC -->
+	<link rel="stylesheet" href="static/styles_coeliac.css" />
+
+	<title>Comparative Pathology Workbench</title>
+
+</head>
+
+<body>
+
+<div class="page-container">
+
+	<div class="page-header">
+
+		<div class="grid-container-header">
+
+			<div class="grid-item-header-logo">
+				<a href="https://www.ed.ac.uk/comparative-pathology">
+					<img style="width: 125px;" alt="CCP" title="Centre for Comparative Pathology" src="static/ccp-logo.png" >
+				</a>
+			</div><!-- End of grid-item-header-logo -->
+
+			<div class="grid-item-header-title">
+				<a href="https://workbench-coeliac-cpw.mvm.ed.ac.uk/home/"><strong>Comparative Pathology Workbench</strong></a>
+			</div><!-- End of grid-item-header-title -->
+
+ 	 		<div class="grid-item-header-search">
+			</div><!-- End of grid-item-header-search -->
+
+			<div class="grid-item-header-user">
+			</div><!-- End of grid-item-header-user -->
+
+			<div class="grid-item-header-bench">
+				<div class="header-dropdown">
+					<button class="header-drop-button">About <i class="fa fa-caret-down"></i></button>
+					<div class="header-dropdown-content">
+						<a href="https://www.ed.ac.uk/comparative-pathology/the-gut-cell-atlas-project/gut-cell-atlas-project"><button class="button button-info"><i class="fa fa-info-circle"></i></button> About</a>
+						<a href="https://www.ed.ac.uk/comparative-pathology/the-gut-cell-atlas-project/gut-cell-atlas-project-team"><button class="button button-info"><i class="fa fa-users"></i></button> People</a>
+						<a href="howto.html"><button class="button button-info"><i class="fa fa-question-circle"></i></button> How To</a>
+					</div><!-- End of header-dropdown-content -->
+				</div><!-- End of header-dropdown -->
+			</div><!-- End of grid-item-header-bench -->
+
+			<div class="grid-item-header-collection">
+			</div><!-- End of grid-item-header-collection -->
+
+			<div class="grid-item-header-image">
+			</div><!-- End of grid-item-header-image -->
+
+			<div class="grid-item-header-source">
+			</div><!-- End of grid-item-header-source -->
+
+			<div class="grid-item-header-about">
+			</div><!-- End of grid-item-header-about -->
+
+			<!-- Breadcrumb Menu -->
+			<div class="grid-item-header-breadcrumb">
+				<ul class="breadcrumb">
+					<li><a href="https://workbench-coeliac-cpw.mvm.ed.ac.uk/home/"><button class="button button-add" style="text-align: center; text-decoration: none; border: 1px solid; border-color: #FCBA03; border-radius: 5px; color: Black; background-color: #FCBA03; font-size: 1em;"><i class="fa fa-home-alt"></i></button></a></li>
+					<li>How To</li>
+				</ul>
+			</div><!-- End of grid-item-header-breadcrumb -->
+
+		</div><!-- End of grid-container-header -->
+
+	</div><!-- End of page-header -->
+
+	<!-- Page Body -->
+	<div class="page-body">
+
+		<!-- Page Side Bar -->
+		<div class="page-sidebar">
+		</div><!-- End of page-sidebar -->
+
+		<!-- Page Content -->
+		<div class="page-content">
+
+			<h1>The Comparative Workbench for Atlas Data</h1>
+
+			<p>A Summary of the Comparative Workbench for Atlas Data Project</p>
+
+			<hr>
+
+			<br />
+
+			<h3>Project Summary</h3>
+
+			<p class="about"><a href="/static/profile/CompWorkbenchAtlas_full_1.pdf">SUMMARY</a></p>
+
+			<p class="about">The <a href="https://www.humancellatlas.org/">Human Cell Atlas</a> resource will deliver single cell transcriptome data spatially organised
+in terms of gross anatomy, tissue location and with images of cellular histology. This will
+enable the application of bioinformatics analysis, machine learning and data-mining
+revealing an atlas of cell types and sub-types and ultimately disease conditions. However, to
+obtain an understanding of specific conditions, pathologies and histopathological phenotypes
+with their spatial relationships and dependencies we need a spatial descriptive framework to
+enable integration and analysis in spatial terms. In addition, tools are needed for the clinical
+domain expert to retrieve, analyse, visualise, and annotate the data and in particular sharing
+for expert-led collaboration, annotation and analysis. This is particularly important in the
+context of the histology of normal and diseased tissues within and across species to fully
+understand animal models of disease and for integration with human data.</p>
+
+			<h3>Project Aims</h3>
+
+			<p class="about">We propose to extend tools and standards developed in the context of the <a href="http://www.emouseatlas.org/emap/home.html">Edinburgh Mouse Atlas</a> with two specific aims:</p>
+
+			<ol>
+
+				<li class="about">To implement a focussed data visual-analytics “workbench” (Comparative Workbench for
+Atlas data or CWA) to provide the capability for clinical pathologists to analyse, annotate
+and compare complex cell-level imaging in conjunction with sequencing data analysis of
+the same or related tissues. This will provide access to the atlas data in tabular views
+enabling comparison between individuals, time-course data and cross-species coupled
+with management of configuration and “state” for tracking, saving and sharing the
+analysis process.</li>
+
+				<li class="about">To develop a conceptual coordinate model of the application domain (small and large
+intestine) for spatial annotation of data samples and to develop the spatial descriptors for
+data retrieval, analysis and visualisation. The model will encode biologically and clinically
+relevant locations and regions and when a full HCA atlas framework becomes available
+the biological conceptual model will be mapped to the real-space coordinate frame. This
+mapping from biologically natural coordinates to real-space image coordinates has been
+demonstrated for the mouse embryo and the same techniques will apply here.</li>
+
+			</ol>
+
+			<p class="about">For specific focus, the CWA context will be normal small intestine and colon and pathology
+of Familial Adenomatous Polyposis (FAP) due to inherited APC mutations. For this we have
+tissue and data across four species: Min mice, Pirc rats, APC-mutant pigs and FAP humans.
+We will extend our OMERO-based prototype to provide a configurable tabular viewer of
+multiple “view-cells”. The CWA enables a structured visual-analysis that utilises
+both human and animal data to interrogate and understand normal physiological and
+pathological mechanisms. The data-samples and image-data will be annotated in spatial
+terms using the conceptual atlas framework and ontologies to develop the spatial-description
+standards needed to annotate both sample-based and image-based data and enable intraand
+inter-species query and analysis. The gut exemplar provides a conceptually “simple”
+biological model with a complex mapping to adult anatomy that will test the requirements for
+spatial annotation and semantic integration needed for all tissues to deliver a fully integrated
+atlas framework enabling machine learning to cross the divide from sequence analysis to
+spatial organisation.</p>
+
+			<h4>Conceptual Coordinate Model</h5>
+
+			<p class="about">The proposed model:</p>
+
+			<p class="about"><img src="static/profile/models.jpg" alt="Conceptual Coordinate Model" height=500px></p>
+
+			<p class="about">Mike Wicks, 3rd March 2022</p>
+
+		</div><!-- End of page-content -->
+
+	</div><!-- End of page-body -->
+
+	<div class="page-footer">
+
+		<div class="grid-container-footer">
+
+			<div class="grid-item-footer">
+			</div><!-- End of grid-item-footer -->
+	
+			<div class="grid-item-footer">
+				<a href="https://helmsleytrust.org/"><img src="https://workbench-coeliac-cpw.mvm.ed.ac.uk/static/helmsley.png" style="background-color: #FFFFFF;" width="170" /></a>
+			</div><!-- End of grid-item-footer -->
+	
+			<div class="grid-item-footer">
+				<a href="https://www.humancellatlas.org/"><img src="https://workbench-coeliac-cpw.mvm.ed.ac.uk/static/HCA-logo-1500x500.jpeg" style="background-color: #FFFFFF;" width="170" /></a>
+			</div><!-- End of grid-item-footer -->
+	
+			<div class="grid-item-footer">
+				<a href="https://www.ed.ac.uk/pathology"><img src="https://www.ed.ac.uk/sites/all/themes/uoe/assets/logo.png" style="background-color: #FFFFFF;" width="220" /></a>
+			</div><!-- End of grid-item-footer -->
+
+			<div class="grid-item-footer">
+				<a href="https://www.hw.ac.uk/"><img src="https://workbench-coeliac-cpw.mvm.ed.ac.uk/static/HW-Logo.jpg" style="background-color: #FFFFFF;" width="125" /></a>
+			</div><!-- End of grid-item-footer -->
+	
+			<div class="grid-item-footer">
+				<a href="https://www.chanzuckerberg.com/"><img src="https://chanzuckerberg.com/wp-content/themes/czi/img/logo.svg" style="background-color: #FFFFFF;" width="125" /></a>
+			</div><!-- End of grid-item-footer -->
+
+			<div class="grid-item-footer">
+			</div><!-- End of grid-item-footer -->
+
+		</div><!-- End of grid-container-footer -->
+
+	</div><!-- End of page-footer -->
+
+</div><!-- End of page-container -->
+
+
+</body>
+
+</html>

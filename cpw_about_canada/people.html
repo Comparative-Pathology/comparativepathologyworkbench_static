@@ -1,0 +1,305 @@
+<!--
+\file		 people.html
+\author		 Mike Wicks
+\date		 March 2021
+\version		$Id$
+\par
+(C) University of Edinburgh, Edinburgh, UK
+(C) Heriot-Watt University, Edinburgh, UK
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be
+useful but WITHOUT ANY WARRANTY; without even the implied
+warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+PURPOSE.	See the GNU General Public License for more
+details.
+
+You should have received a copy of the GNU General Public
+License along with this program; if not, write to the Free
+Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+Boston, MA	02110-1301, USA.
+\brief
+The About People page
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="static/apple-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="60x60" href="static/apple-icon-60x60.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="static/apple-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="static/apple-icon-76x76.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="static/apple-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="static/apple-icon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="static/apple-icon-144x144.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="static/apple-icon-152x152.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="static/apple-icon-180x180.png" >
+	<link rel="icon" type="image/png" sizes="192x192" href="static/android-icon-192x192.png" />
+	<link rel="shortcut icon" type="image/ico" href="static/favicon.ico" />
+	<link rel="icon" type="image/png" sizes="32x32" href="static/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="96x96" href="static/favicon-96x96.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="static/favicon-16x16.png" />
+	<link rel="manifest" href="static/manifest.json" />
+	<meta name="msapplication-TileColor" content="#ffffff" />
+	<meta name="msapplication-TileImage" content="/static/ms-icon-144x144.png" />
+	<meta name="theme-color" content="#ffffff" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.css" />
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js"></script>
+
+	<!-- CANADA -->
+	<link rel="stylesheet" href="static/styles_canada.css" />
+
+	<title>Comparative Pathology Workbench</title>
+
+</head>
+
+<body>
+
+<div class="page-container">
+
+	<div class="page-header">
+
+		<div class="grid-container-header">
+
+			<div class="grid-item-header-logo">
+				<a href="https://www.ed.ac.uk/comparative-pathology">
+					<img style="width: 125px;" alt="CCP" title="Centre for Comparative Pathology" src="static/ccp-logo.png" >
+				</a>
+			</div><!-- End of grid-item-header-logo -->
+
+			<div class="grid-item-header-title">
+				<a href="https://workbench-canada-cpw.mvm.ed.ac.uk/home/"><strong>Comparative Pathology Workbench</strong></a>
+			</div><!-- End of grid-item-header-title -->
+
+ 	 		<div class="grid-item-header-search">
+			</div><!-- End of grid-item-header-search -->
+
+			<div class="grid-item-header-user">
+			</div><!-- End of grid-item-header-user -->
+
+			<div class="grid-item-header-bench">
+				<div class="header-dropdown">
+					<button class="header-drop-button">About <i class="fa fa-caret-down"></i></button>
+					<div class="header-dropdown-content">
+						<a href="https://www.ed.ac.uk/comparative-pathology/the-gut-cell-atlas-project/gut-cell-atlas-project"><button class="button button-info"><i class="fa fa-info-circle"></i></button> About</a>
+						<a href="https://www.ed.ac.uk/comparative-pathology/the-gut-cell-atlas-project/gut-cell-atlas-project-team"><button class="button button-info"><i class="fa fa-users"></i></button> People</a>
+						<a href="howto.html"><button class="button button-info"><i class="fa fa-question-circle"></i></button> How To</a>
+					</div><!-- End of header-dropdown-content -->
+				</div><!-- End of header-dropdown -->
+			</div><!-- End of grid-item-header-bench -->
+
+			<div class="grid-item-header-collection">
+			</div><!-- End of grid-item-header-collection -->
+
+			<div class="grid-item-header-image">
+			</div><!-- End of grid-item-header-image -->
+
+			<div class="grid-item-header-source">
+			</div><!-- End of grid-item-header-source -->
+
+			<div class="grid-item-header-about">
+			</div><!-- End of grid-item-header-about -->
+
+			<!-- Breadcrumb Menu -->
+			<div class="grid-item-header-breadcrumb">
+				<ul class="breadcrumb">
+					<li><a href="https://workbench-canada-cpw.mvm.ed.ac.uk/home/"><button class="button button-add" style="text-align: center; text-decoration: none; border: 1px solid; border-color: #F5776E; border-radius: 5px; color: Black; background-color: #F5776E; font-size: 1em;"><i class="fa fa-home-alt"></i></button></a></li>
+					<li>How To</li>
+				</ul>
+			</div><!-- End of grid-item-header-breadcrumb -->
+
+		</div><!-- End of grid-container-header -->
+
+	</div><!-- End of page-header -->
+
+	<!-- Page Body -->
+	<div class="page-body">
+
+		<!-- Page Side Bar -->
+		<div class="page-sidebar">
+		</div><!-- End of page-sidebar -->
+
+		<!-- Page Content -->
+		<div class="page-content">
+
+			<h1>People</h1>
+
+			<p class="about">The Contributors to the Comparative Pathology Workbench Project</p>
+
+			<hr>
+
+			<br />
+
+			<div class="home-grid-container">
+
+				<div class="home-grid-item">
+
+					<div class="card-people">
+
+						<img class="card-image" src="static/profile/prof_mark_arends.jpg" alt="Prof Mark Arends" height=150px>
+
+						<div class="card-container-people">
+
+							<h3>Prof. Mark Arends</h3>
+
+							<p class="about"><a href="https://www.ed.ac.uk/pathology/people/staff-students/mark-arends">Professor Arends</a>
+directs the <a href="https://www.ed.ac.uk/comparative-pathology">Centre for Comparative Pathology</a> and leads the colorectal
+cancer pathology research group, working on animal models of adenomatous polyposis
+pathology using well-characterised mouse, rat and pig mutant-APC models and human
+FAP for cross-species comparison.</p>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="home-grid-item">
+
+					<div class="card-people">
+
+						<img class="card-image" src="static/profile/prof_richard_baldock.jpg" alt="Prof Richard Baldock" height=150px>
+
+						<div class="card-container-people">
+
+							<h3>Prof. Richard Baldock</h3>
+
+							<p class="about"><a href="https://www.ed.ac.uk/mrc-human-genetics-unit/research/baldock-group">Professor Baldock</a> has led
+the <a href="http://www.emouseatlas.org/emap/home.html">Mouse Atlas programme6</a> at the
+<a href="https://www.ed.ac.uk/igmm">IGMM</a> and developed the core concepts used by many spatial atlas resources
+internationally, anatomy ontologies and the 3D spatial frameworks and techniques for spatial
+data mapping and visualisation.</p>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="home-grid-item">
+
+					<div class="card-people">
+
+						<img class="card-image" src="static/profile/prof_albert_burger.jpg" alt="Prof Albert Burger" height=150px>
+
+						<div class="card-container-people">
+
+							<h3>Prof. Albert Burger</h3>
+
+							<p class="about"><a href="https://researchportal.hw.ac.uk/en/persons/albert-georg-burger">Professor Albert Burger</a> leads
+the <a href="http://www.macs.hw.ac.uk/bisel/index.shtml">Biomedical Informatics Systems Engineering Lab(BISEL)</a>
+at <a href="https://www.hw.ac.uk/">Heriot- Watt University</a>. He has closely worked with
+the Mouse Atlas program forover 15 years. His research expertise focuses on distributed
+bioinformatics systems, including integration of distributed, heterogeneous databases and
+web service infrastructures.</p>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="home-grid-container">
+
+				<div class="home-grid-item">
+
+					<div class="card-people">
+
+						<img class="card-image" src="static/profile/dr_ken_mcleod.jpg" alt="Dr Ken McLeod" height=150px>
+
+						<div class="card-container-people">
+
+							<h3>Dr. Ken McLeod</h3>
+
+							<p class="about"><a href="https://researchportal.hw.ac.uk/en/persons/kenneth-mcleod">Dr Ken McLeod</a> works
+as a Research Associate with Prof. Burger, in the <a href="http://www.macs.hw.ac.uk/bisel/index.shtml">Biomedical
+Informatics Systems Engineering Lab(BISEL)</a> at <a href="https://www.hw.ac.uk/">Heriot- Watt University</a>, and has developed the conceptual models in this project.</p>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="home-grid-item">
+
+					<div class="card-people">
+
+						<img class="card-image" src="static/profile/mr_mike_wicks.jpg" alt="Mr Mike Wicks" height=150px>
+
+						<div class="card-container-people">
+
+							<h3>Mr Mike Wicks</h3>
+
+							<p class="about"><a href="https://www.ed.ac.uk/pathology/people/staff-students/mike-wicks">Mr Mike Wicks</a> is
+the Workbench Programmer for Prof. Arends in the <a href="https://www.ed.ac.uk/comparative-pathology">Centre for Comparative
+Pathology</a>, and has built the Comparative Workbench system in this project.</p>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<p class="about">Mike Wicks, 3rd March 2022</p>
+
+		</div><!-- End of page-content -->
+
+	</div><!-- End of page-body -->
+
+	<div class="page-footer">
+
+		<div class="grid-container-footer">
+
+			<div class="grid-item-footer">
+			</div><!-- End of grid-item-footer -->
+	
+			<div class="grid-item-footer">
+				<a href="https://helmsleytrust.org/"><img src="https://workbench-canada-cpw.mvm.ed.ac.uk/static/helmsley.png" style="background-color: #FFFFFF;" width="170" /></a>
+			</div><!-- End of grid-item-footer -->
+	
+			<div class="grid-item-footer">
+				<a href="https://www.humancellatlas.org/"><img src="https://workbench-canada-cpw.mvm.ed.ac.uk/static/HCA-logo-1500x500.jpeg" style="background-color: #FFFFFF;" width="170" /></a>
+			</div><!-- End of grid-item-footer -->
+	
+			<div class="grid-item-footer">
+				<a href="https://www.ed.ac.uk/pathology"><img src="https://www.ed.ac.uk/sites/all/themes/uoe/assets/logo.png" style="background-color: #FFFFFF;" width="220" /></a>
+			</div><!-- End of grid-item-footer -->
+
+			<div class="grid-item-footer">
+				<a href="https://www.hw.ac.uk/"><img src="https://workbench-canada-cpw.mvm.ed.ac.uk/static/HW-Logo.jpg" style="background-color: #FFFFFF;" width="125" /></a>
+			</div><!-- End of grid-item-footer -->
+	
+			<div class="grid-item-footer">
+				<a href="https://www.chanzuckerberg.com/"><img src="https://chanzuckerberg.com/wp-content/themes/czi/img/logo.svg" style="background-color: #FFFFFF;" width="125" /></a>
+			</div><!-- End of grid-item-footer -->
+
+			<div class="grid-item-footer">
+			</div><!-- End of grid-item-footer -->
+
+		</div><!-- End of grid-container-footer -->
+
+	</div><!-- End of page-footer -->
+
+</div><!-- End of page-container -->
+
+</body>
+
+</html>
